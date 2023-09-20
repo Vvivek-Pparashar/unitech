@@ -1,6 +1,11 @@
 const { default: mongoose } = require("mongoose");
 
 const productSchema = mongoose.Schema({
+  key: {
+    type: Number,
+    required: [true, "give a title"],
+  },
+
   title: {
     type: String,
     required: [true, "give a title"],
